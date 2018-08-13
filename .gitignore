@@ -115,3 +115,4 @@ all.config
 *.kdev4
 
 obj
+/out
