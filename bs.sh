@@ -22,13 +22,13 @@ ANYKERNEL_DIR=/root/kernel/any
 EXPORT_DIR=/root/kernel/flashablezips
 
 # Make Changes to this before release
-ZIP_NAME="Derp-MIUI-v2.1"
+ZIP_NAME="Derp-MIUI-v2.2"
 
 # Tweakable Options Below
 export ARCH=arm64
 export SUBARCH=arm64
-#export KBUILD_BUILD_USER="Imelos"
-#export KBUILD_BUILD_HOST="WSL"
+export KBUILD_BUILD_USER=""
+export KBUILD_BUILD_HOST=""
 export KBUILD_COMPILER_STRING=$(/root/kernel/clang/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')
 
 TOOLCHAIN=/root/kernel/gcc/bin/aarch64-linux-android-
