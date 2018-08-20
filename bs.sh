@@ -22,7 +22,7 @@ ANYKERNEL_DIR=/root/kernel/any
 EXPORT_DIR=/root/kernel/flashablezips
 
 # Make Changes to this before release
-ZIP_NAME="Derp-MIUI-v2.2"
+ZIP_NAME="Derp-MIUI-v2.21"
 
 # Tweakable Options Below
 export ARCH=arm64
