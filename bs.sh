@@ -22,13 +22,13 @@ ANYKERNEL_DIR=/root/kernel/any
 EXPORT_DIR=/root/kernel/flashablezips
 
 # Make Changes to this before release
-ZIP_NAME="Derp-MIUI-v2.21"
+ZIP_NAME="Derp-MIUI-v2.3"
 
 # Tweakable Options Below
 export ARCH=arm64
 export SUBARCH=arm64
-export KBUILD_BUILD_USER=""
-export KBUILD_BUILD_HOST=""
+export KBUILD_BUILD_USER="OS"
+export KBUILD_BUILD_HOST="WSL"
 export KBUILD_COMPILER_STRING=$(/root/kernel/clang/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')
 
 TOOLCHAIN=/root/kernel/gcc/bin/aarch64-linux-android-
@@ -73,7 +73,7 @@ echo "       Making Flashable Zip       "
  rm -f ${ANYKERNEL_DIR}/zImage*                    
  rm -f ${ANYKERNEL_DIR}/dtb*                  
 
-*/
+#*/
 cp -vr ${KERN_IMG} ${ANYKERNEL_DIR}/Image.gz-dtb  
 
 #since modules are compiled inline with kernel , we dont need this  
