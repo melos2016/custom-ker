@@ -22,7 +22,7 @@ ANYKERNEL_DIR=/root/kernel/any
 EXPORT_DIR=/root/kernel/flashablezips
 
 # Make Changes to this before release
-ZIP_NAME="Derp-MIUI-v2.4"
+ZIP_NAME="Derp-MIUI-OC-v2.4"
 
 # Tweakable Options Below
 export ARCH=arm64
@@ -39,7 +39,7 @@ MAKE_OPTS="ARCH=arm64 O=out CC=${CLANG_PATH} CLANG_TRIPLE=${CLANG_TRIPLE} CROSS_
 echo "  Initializing build to compile Ver: $ZIP_NAME    "
 
 echo "         Creating Output Directory: out      "
-rm -rf out
+#rm -rf out
 mkdir -p out
 
 echo "          Cleaning Up Before Compile          "
