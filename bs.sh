@@ -27,8 +27,8 @@ ZIP_NAME="Derp-MIUI-v3.3"
 # Tweakable Options Below
 export ARCH=arm64
 export SUBARCH=arm64
-#export KBUILD_BUILD_USER="WSL"
-#export KBUILD_BUILD_HOST="OS"
+export KBUILD_BUILD_USER="WSL"
+export KBUILD_BUILD_HOST="OS"
 export KBUILD_COMPILER_STRING=$(/root/kernel/clang/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')
 
 TOOLCHAIN=/root/kernel/gcc/bin/aarch64-linux-android-
